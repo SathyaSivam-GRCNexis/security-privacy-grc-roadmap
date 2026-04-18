@@ -1,0 +1,86 @@
+# Licence
+
+This repository uses two licences. Choose the one appropriate to the file or directory you are using.
+
+---
+
+## 1. Prose, modules, and reference material — CC BY-SA 4.0
+
+All Markdown content **outside** the `scenarios/templates/` directory is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International Licence**.
+
+This includes:
+
+- All files in `modules/`
+- All files in `paths/`
+- All files in `reference/`
+- All files in `interview-prep/`
+- `README.md`, `START-HERE.md`, `faq.md`, `scenarios/README.md`, and other top-level documents
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format.
+- **Adapt** — remix, transform, and build upon the material for any purpose, including commercially.
+
+Under the following terms:
+
+- **Attribution.** You must give appropriate credit to **Sathya Sivam** (this repository: `https://github.com/SathyaSivam-GRCNexis/security-privacy-grc-roadmap`), provide a link to the licence, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- **ShareAlike.** If you remix, transform, or build upon the material, you must distribute your contributions under the same licence as the original.
+- **No additional restrictions.** You may not apply legal terms or technological measures that legally restrict others from doing anything the licence permits.
+
+The full text of CC BY-SA 4.0 is available at: `https://creativecommons.org/licenses/by-sa/4.0/legalcode`
+
+A summary suitable for most uses: `https://creativecommons.org/licenses/by-sa/4.0/`
+
+---
+
+## 2. Templates in `scenarios/templates/` — MIT Licence
+
+All files **inside** the `scenarios/templates/` directory are licensed under the **MIT Licence**, so that practitioners can adapt them freely for use in real workplaces, including commercial settings, without the ShareAlike obligation.
+
+This covers:
+
+- `risk-register.csv`
+- `dpia-template.md`
+- `statement-of-applicability.md`
+- `ir-runbook.md`
+- `vendor-assessment.md`
+- `policy-template.md`
+- `audit-evidence-pack.md`
+
+```
+MIT Licence
+
+Copyright (c) 2026 Sathya Sivam
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+## 3. Disclaimer
+
+This repository is an educational resource. It is not legal advice, regulatory advice, or a substitute for professional counsel. Regulations change, frameworks evolve, and your specific circumstances may require interpretation by a qualified professional. Validate any compliance-relevant decision against the current text of the law and, where appropriate, with qualified legal counsel and a competent auditor.
+
+The author is not liable for decisions made on the basis of this material.
+
+---
+
+## 4. Trademarks
+
+References to third-party standards, frameworks, regulations, and products (ISO 27001, SOC 2, NIST CSF, GDPR, DPDP Act, AWS, Microsoft, Google, and others) are the property of their respective owners and are used for descriptive and educational purposes only. No endorsement is implied in either direction.

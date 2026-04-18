@@ -1,0 +1,61 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
+
+# Local notes and drafts
+/drafts/
+/scratch/
+/.notes/
+*.draft.md
+NOTES.local.md
+TODO.local.md
+
+# Generated artefacts
+/_site/
+/.cache/
+/dist/
+/build/
+node_modules/
+*.log
+
+# Python tooling (if anyone runs scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Office lock files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Archive and backup files
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Confidential drops (never commit anything matching these)
+*secret*
+*credentials*
+*private-key*
+*.pem
+*.key
+.env.*
