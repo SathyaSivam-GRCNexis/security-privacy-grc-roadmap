@@ -289,4 +289,4 @@ Three completed capstones from this module will out-compete five certs on a resu
 - What's in a SoA and why do auditors love it?
 - What's the difference between encryption at-rest and tokenisation?
 
-→ Next: [Appendix A — Free Resources Master List](appendix-free-resources.md)
+→ Next: [Appendix A — Free Resources Master List](../reference/free-resources.md)

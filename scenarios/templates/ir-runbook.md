@@ -162,4 +162,4 @@ Run this checklist quarterly. If any item is "no," it is a finding for your next
 
 ---
 
-*Linked from: Incident Response Policy POL-008 · Tested in tabletop exercise log TBL-_________ · Cross-referenced from [Module 11](../../modules/11-incident-response-and-bcp.md).*
+*Linked from: Incident Response Policy POL-008 · Tested in tabletop exercise log TBL-_________ · Cross-referenced from [Module 11](../../modules/11-incident-response-bcp.md).*

@@ -18,20 +18,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   - `02-tech-professional.md` (10 to 14 weeks, 100 to 130 hours).
 - All 18 modules from the source course material in `modules/`:
   - 00 Foundation pack
-  - 01 Security in everyday life
-  - 02 Building blocks of computing
-  - 03 Network and infrastructure security
-  - 04 Cloud and platform security
-  - 05 Data protection
+  - 01 Security first principles
+  - 02 Cryptography for humans
+  - 03 Identity and access
+  - 04 Network security
+  - 05 Privacy fundamentals
   - 06 Privacy laws
   - 07 GRC frameworks
   - 08 Risk management
-  - 09 Audits and assessments
-  - 10 Information security management systems
+  - 09 Audit lifecycle
+  - 10 Policies
   - 11 Incident response and BCP
-  - 12 Vendor and third-party risk
-  - 13 Cryptography
-  - 14 Application and product security
+  - 12 Vendor risk
+  - 13 Cloud security
+  - 14 Application security
   - 15 Emerging topics (AI, quantum, supply chain)
   - 16 Careers and interviews
   - 17 Practice scenarios and capstones
