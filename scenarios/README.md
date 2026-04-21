@@ -40,7 +40,7 @@ The other common mistake: people produce deliverables that are technically corre
 
 Once you have three scenarios you are not embarrassed by:
 
-1. Sanitise. Remove anything that looks like real client data, even if you invented it. Use the recurring fictional EdTech SaaS from the modules ("LearnLark") or invent your own.
+1. Sanitise. Remove anything that looks like real client data, even if you invented it. The modules use a recurring fictional EdTech platform as the worked example; you can extend that, or invent your own clearly fictional company. Either is fine, as long as nothing looks like a real organisation.
 2. Make the repo public. Pin it to your GitHub profile.
 3. Add it to LinkedIn under **Featured**. Use the word *capstone*, not *project*. *Project* sounds like coursework. *Capstone* sounds like work.
 4. Bring two of them ready to discuss in interviews. Not recite. Discuss. Be ready to defend the trade-offs you made and name what you would do differently.

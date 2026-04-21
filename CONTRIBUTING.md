@@ -46,7 +46,7 @@ If you contribute a new module or a substantial section, follow the established 
 2. **Core definitions.** Plain English first, formal second.
 3. **Analogy.** A concrete, non-technical comparison.
 4. **Concept teaching.** The substantive content.
-5. **Worked example.** Use the recurring fictional EdTech SaaS ("LearnLark") for continuity.
+5. **Worked example.** Where possible, reuse the recurring fictional EdTech platform that appears across Modules 1, 5, 6, 8, and 10, so readers build cumulative familiarity. If your topic does not fit that example, pick a clearly fictional company and stay consistent within the module.
 6. **Comparison table.** Where relevant.
 7. **Beginner mistakes.** What people get wrong.
 8. **Interview traps.** What hiring managers test for.
