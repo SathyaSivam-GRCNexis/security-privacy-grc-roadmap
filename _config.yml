@@ -74,41 +74,39 @@ defaults:
       layout: page
       section: FAQ
 
-# Hero "what's covered" grid
+# Categorised framework grid for the hero
 framework_groups:
+  - heading: ISO Standards
+    items:
+      - { name: "ISO 27001:2022", tag: "ISMS" }
+      - { name: "ISO 27701", tag: "PIMS" }
+      - { name: "ISO 22301", tag: "BCMS" }
+      - { name: "ISO 27017", tag: "Cloud" }
+      - { name: "ISO 27018", tag: "Cloud PII" }
+      - { name: "ISO 31000", tag: "Risk" }
+      - { name: "ISO 9001", tag: "Quality" }
   - heading: Privacy & Data Protection
     items:
       - { name: "GDPR", tag: "EU" }
-      - { name: "UK GDPR", tag: "UK" }
       - { name: "DPDP Act 2023", tag: "India" }
-      - { name: "CCPA / CPRA", tag: "California" }
       - { name: "HIPAA", tag: "US" }
       - { name: "PCI-DSS 4.0.1", tag: "Payments" }
-  - heading: GRC Frameworks & Standards
+  - heading: Risk & Security Frameworks
     items:
-      - { name: "ISO 27001:2022", tag: "ISO" }
-      - { name: "ISO 27701", tag: "ISO" }
-      - { name: "ISO 22301", tag: "ISO" }
-      - { name: "ISO 42001", tag: "AI" }
       - { name: "NIST CSF 2.0", tag: "US" }
       - { name: "NIST 800-53 r5", tag: "US" }
       - { name: "SOC 2", tag: "AICPA" }
-  - heading: Technical & Operational
+      - { name: "CSA STAR", tag: "Cloud" }
+  - heading: AI Governance & AppSec
     items:
+      - { name: "ISO 42001", tag: "AIMS" }
+      - { name: "EU AI Act", tag: "EU" }
       - { name: "OWASP Top 10", tag: "Web/API" }
       - { name: "OWASP LLM 2025", tag: "AI" }
-      - { name: "MITRE ATT&CK", tag: "TTP" }
-      - { name: "MITRE ATLAS", tag: "AI" }
-      - { name: "CIS v8.1", tag: "Controls" }
-      - { name: "CISA ZTMM 2.0", tag: "US" }
-  - heading: Regulatory Landmarks
+  - heading: India Regulations
     items:
-      - { name: "EU AI Act", tag: "EU" }
-      - { name: "SEC Cyber Disclosure", tag: "US" }
-      - { name: "CERT-In Directions", tag: "India" }
       - { name: "RBI Cyber Framework", tag: "India" }
       - { name: "SEBI CSCRF", tag: "India" }
-      - { name: "DORA", tag: "EU" }
 
 # Persona path cards (landing)
 paths:
