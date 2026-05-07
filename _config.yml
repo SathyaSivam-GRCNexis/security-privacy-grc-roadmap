@@ -1,0 +1,153 @@
+title: Security, Privacy & GRC Roadmap
+description: A free, opinionated, India-aware practitioner roadmap into Security, Privacy, and GRC. Persona paths, 18 modules, reference materials, interview prep, and capstone scenarios.
+url: "https://sathyasivam-grcnexis.github.io"
+baseurl: "/security-privacy-grc-roadmap"
+
+author:
+  name: Sathya Sivam
+  github: SathyaSivam-GRCNexis
+
+repository: SathyaSivam-GRCNexis/security-privacy-grc-roadmap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: /:path/
+
+include:
+  - README.md
+
+exclude:
+  - .gitignore
+  - .github
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - CHANGELOG.md
+  - LICENSE
+  - "*.gemspec"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  - scope:
+      path: "modules"
+    values:
+      layout: page
+      section: Modules
+  - scope:
+      path: "paths"
+    values:
+      layout: page
+      section: Persona Paths
+  - scope:
+      path: "reference"
+    values:
+      layout: page
+      section: Reference
+  - scope:
+      path: "scenarios"
+    values:
+      layout: page
+      section: Scenarios
+  - scope:
+      path: "interview-prep"
+    values:
+      layout: page
+      section: Interview Prep
+  - scope:
+      path: "START-HERE.md"
+    values:
+      layout: page
+      section: Start Here
+  - scope:
+      path: "faq.md"
+    values:
+      layout: page
+      section: FAQ
+
+# Hero "what's covered" grid
+framework_groups:
+  - heading: Privacy & Data Protection
+    items:
+      - { name: "GDPR", tag: "EU" }
+      - { name: "UK GDPR", tag: "UK" }
+      - { name: "DPDP Act 2023", tag: "India" }
+      - { name: "CCPA / CPRA", tag: "California" }
+      - { name: "HIPAA", tag: "US" }
+      - { name: "PCI-DSS 4.0.1", tag: "Payments" }
+  - heading: GRC Frameworks & Standards
+    items:
+      - { name: "ISO 27001:2022", tag: "ISO" }
+      - { name: "ISO 27701", tag: "ISO" }
+      - { name: "ISO 22301", tag: "ISO" }
+      - { name: "ISO 42001", tag: "AI" }
+      - { name: "NIST CSF 2.0", tag: "US" }
+      - { name: "NIST 800-53 r5", tag: "US" }
+      - { name: "SOC 2", tag: "AICPA" }
+  - heading: Technical & Operational
+    items:
+      - { name: "OWASP Top 10", tag: "Web/API" }
+      - { name: "OWASP LLM 2025", tag: "AI" }
+      - { name: "MITRE ATT&CK", tag: "TTP" }
+      - { name: "MITRE ATLAS", tag: "AI" }
+      - { name: "CIS v8.1", tag: "Controls" }
+      - { name: "CISA ZTMM 2.0", tag: "US" }
+  - heading: Regulatory Landmarks
+    items:
+      - { name: "EU AI Act", tag: "EU" }
+      - { name: "SEC Cyber Disclosure", tag: "US" }
+      - { name: "CERT-In Directions", tag: "India" }
+      - { name: "RBI Cyber Framework", tag: "India" }
+      - { name: "SEBI CSCRF", tag: "India" }
+      - { name: "DORA", tag: "EU" }
+
+# Persona path cards (landing)
+paths:
+  - { num: "01", slug: "paths/00-non-tech-beginner", title: "Non-Tech Beginner", who: "Exploring whether security, privacy, or GRC is for you", focus: "Foundation pack + GRC core (Modules 0, 1, 3, 5–10)", color: "green" }
+  - { num: "02", slug: "paths/01-career-shifter", title: "Career Shifter", who: "From law, finance, audit, ops, or project management", focus: "Full curriculum, extra weight on Modules 5–12", color: "amber" }
+  - { num: "03", slug: "paths/02-tech-professional", title: "Tech Professional", who: "Dev / SRE / cloud moving into security or GRC", focus: "Fast pass through basics, deep on Modules 7–15", color: "pink" }
+
+# 18 modules (landing grid)
+modules:
+  - { num: "00", slug: "modules/00-foundation-pack", title: "Foundation Pack", group: "Foundations" }
+  - { num: "01", slug: "modules/01-security-first-principles", title: "Security First Principles", group: "Foundations" }
+  - { num: "02", slug: "modules/02-cryptography-for-humans", title: "Cryptography for Humans", group: "Technical Core" }
+  - { num: "03", slug: "modules/03-identity-and-access", title: "Identity and Access", group: "Technical Core" }
+  - { num: "04", slug: "modules/04-network-security", title: "Network Security", group: "Technical Core" }
+  - { num: "05", slug: "modules/05-privacy-fundamentals", title: "Privacy Fundamentals", group: "Privacy" }
+  - { num: "06", slug: "modules/06-privacy-laws", title: "Privacy Laws", group: "Privacy" }
+  - { num: "07", slug: "modules/07-grc-frameworks", title: "GRC Frameworks", group: "GRC" }
+  - { num: "08", slug: "modules/08-risk-management", title: "Risk Management", group: "GRC" }
+  - { num: "09", slug: "modules/09-audit-lifecycle", title: "Audit Lifecycle", group: "GRC" }
+  - { num: "10", slug: "modules/10-policies", title: "Policies", group: "GRC" }
+  - { num: "11", slug: "modules/11-incident-response-bcp", title: "Incident Response & BCP", group: "Operations" }
+  - { num: "12", slug: "modules/12-vendor-risk", title: "Vendor Risk", group: "Operations" }
+  - { num: "13", slug: "modules/13-cloud-security", title: "Cloud Security", group: "Cloud & AppSec" }
+  - { num: "14", slug: "modules/14-appsec", title: "AppSec", group: "Cloud & AppSec" }
+  - { num: "15", slug: "modules/15-emerging-topics", title: "Emerging Topics", group: "Frontier" }
+  - { num: "16", slug: "modules/16-careers-and-interviews", title: "Careers and Interviews", group: "Career" }
+  - { num: "17", slug: "modules/17-practice-scenarios", title: "Practice Scenarios", group: "Career" }
+
+# Reference docs (landing)
+references:
+  - { slug: "reference/glossary", title: "Glossary", note: "Every term defined, alphabetised" }
+  - { slug: "reference/acronyms", title: "Acronyms", note: "The acronym zoo, decoded" }
+  - { slug: "reference/frameworks-cross-map", title: "Frameworks Cross-Map", note: "SOC 2 ↔ ISO 27001 ↔ NIST CSF ↔ PCI ↔ HIPAA" }
+  - { slug: "reference/regulator-clocks", title: "Regulator Clocks", note: "Every notification deadline in one table" }
+  - { slug: "reference/free-resources", title: "Free Resources", note: "Curated free-resource library" }
+
+# Interview prep docs
+interview:
+  - { slug: "interview-prep/question-bank", title: "Question Bank", note: "Every interview trap from every module" }
+  - { slug: "interview-prep/30-second-drills", title: "30-Second Drills", note: "Rapid-fire concept drills" }
+  - { slug: "interview-prep/star-and-c4r-frameworks", title: "STAR and C4R Frameworks", note: "How to structure interview answers" }
+  - { slug: "interview-prep/india-market-snapshot", title: "India Market Snapshot", note: "INR salary bands, key employers" }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234c1d95'/%3E%3Ctext x='50' y='66' font-size='52' font-weight='800' text-anchor='middle' fill='%23fbbf24' font-family='system-ui'%3ER%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>{{ site.title }}<span class="title-underline"></span></h1>
+    <p class="tagline">A free, opinionated, India-aware practitioner roadmap into Security, Privacy, and GRC. Built around what hiring managers actually ask.</p>
+    <p class="subline">Three persona paths. Eighteen modules. Five reference docs. Ten capstone scenarios. Every required resource is free.</p>
+
+    <div class="framework-grid">
+      {% for group in site.framework_groups %}
+      <div class="fg-group">
+        <div class="fg-heading">{{ group.heading }}</div>
+        <div class="fg-items">
+          {% for item in group.items %}
+          <span class="fg-item">{{ item.name }}<span class="fg-tag">{{ item.tag }}</span></span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="hero-badges">
+      <img alt="Modules" src="https://img.shields.io/badge/Modules-18-22c55e?style=for-the-badge&labelColor=0f172a">
+      <img alt="Paths" src="https://img.shields.io/badge/Persona%20Paths-3-3b82f6?style=for-the-badge&labelColor=0f172a">
+      <img alt="Scenarios" src="https://img.shields.io/badge/Capstone%20Scenarios-10-a855f7?style=for-the-badge&labelColor=0f172a">
+      <img alt="License" src="https://img.shields.io/badge/License-CC%20BY--SA%204.0-fbbf24?style=for-the-badge&labelColor=0f172a">
+      <img alt="Updated" src="https://img.shields.io/badge/Updated-Apr%202026-ec4899?style=for-the-badge&labelColor=0f172a">
+    </div>
+  </div>
+</header>
+
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">Overview</a>
+    <a href="{{ '/START-HERE/' | relative_url }}">Start Here</a>
+    <a href="{{ '/#paths' | relative_url }}">Paths</a>
+    <a href="{{ '/#modules' | relative_url }}">Modules</a>
+    <a href="{{ '/#reference' | relative_url }}">Reference</a>
+    <a href="{{ '/#interview-prep' | relative_url }}">Interview Prep</a>
+    <a href="{{ '/faq/' | relative_url }}">FAQ</a>
+    <a href="https://github.com/{{ site.repository }}">GitHub</a>
+  </div>
+</nav>
+
+<main class="content">
+  {{ content }}
+</main>
+
+<footer class="site-footer">
+  <p>Maintained by <a href="https://github.com/{{ site.author.github }}">{{ site.author.name }}</a> &middot; Content licensed under CC BY-SA 4.0, templates under MIT &middot; <a href="https://github.com/{{ site.repository }}">View on GitHub</a></p>
+</footer>
+
+</body>
+</html>
