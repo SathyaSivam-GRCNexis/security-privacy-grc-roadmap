@@ -1,8 +1,8 @@
 # Vendor Security & Privacy Assessment
 
-> **Template note.** This is the form you complete (or have the vendor complete) before a contract is signed, and at renewal. The depth of assessment must match the risk tier. A vendor that holds your customer's personal data is tier 1 and demands the full form. A vendor that prints your office stationery is tier 3 and warrants a five-line entry in the register.
+> **Template note.** This is the form you complete, or have the vendor complete, before a contract is signed, and again at renewal. The depth of the assessment matches the risk tier. A vendor that holds your customer's personal data is Tier 1 and gets the full form. A vendor that prints your office stationery is Tier 3 and gets a five-line entry in the register.
 >
-> Maintain a vendor inventory separately. This template is the per-vendor file.
+> Keep a vendor inventory separately. This template is the per-vendor file.
 >
 > **Vendor name:** _________ · **Vendor ID:** VND-_________ · **Assessment date:** _________ · **Assessor:** _________ · **Next review:** _________
 
@@ -74,9 +74,9 @@
 
 Tier the vendor before going further. The depth of the rest of this assessment depends on the tier.
 
-- **Tier 1 — Critical.** Holds personal data at scale, integrates with production systems, or an outage materially impacts revenue or safety. Requires full assessment, annual review, contract DPA, evidence of independent attestation, and a documented exit plan.
-- **Tier 2 — Significant.** Holds limited personal data or supports an important business process. Requires standard assessment, biennial review, contract DPA where applicable.
-- **Tier 3 — Standard.** No personal data, no production-system integration, low operational impact. Requires lightweight check at onboarding and at renewal.
+- **Tier 1, Critical.** Holds personal data at scale, integrates with production systems, or an outage hits revenue or safety. Full assessment, annual review, signed DPA, evidence of independent attestation, and a documented exit plan.
+- **Tier 2, Significant.** Holds limited personal data or supports an important business process. Standard assessment, biennial review, signed DPA where applicable.
+- **Tier 3, Standard.** No personal data, no production integration, low operational impact. Lightweight check at onboarding and at renewal.
 
 **This vendor's tier:** _________
 
@@ -101,13 +101,13 @@ If Tier 3, complete sections 5 and 11 only and stop. If Tier 1 or 2, complete th
 
 **If no independent attestation,** does the vendor accept a security questionnaire (SIG / CAIQ / HECVAT)? _________
 
-**If no questionnaire either,** the vendor is unsuitable for Tier 1. State the recommendation.
+**If no questionnaire either,** the vendor is unsuitable for Tier 1. Record the recommendation.
 
 ---
 
 ## 6. Security controls (questionnaire summary)
 
-For Tier 1 vendors, request the most recent SOC 2 / ISO report under NDA. For Tier 2, the questionnaire is sufficient. The questions below are the minimum.
+For Tier 1 vendors, ask for the most recent SOC 2 or ISO report under NDA. For Tier 2, the questionnaire is enough. The questions below are the minimum.
 
 ### Identity and access management
 

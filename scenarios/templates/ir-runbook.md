@@ -1,8 +1,8 @@
 # Incident Response Runbook
 
-> **Template note.** A runbook is not a policy. A policy says "we will respond to incidents." A runbook tells the on-call engineer at 02:47 IST what to do in the next ten minutes. Keep it short, scannable, and rehearsed. If your runbook is twelve pages long, nobody reads it during a real incident.
+> **Template note.** A runbook is not a policy. A policy says "we will respond to incidents." A runbook tells the on-call engineer at 02:47 IST what to do in the next ten minutes. Keep it short, scannable, and rehearsed. If the runbook is twelve pages long, nobody reads it during a real incident.
 >
-> Maintain one runbook per scenario type (credential stuffing, ransomware, data exposure, account takeover, vendor outage, insider misuse). This template is the credential-stuffing variant. Copy and adapt.
+> One runbook per scenario type: credential stuffing, ransomware, data exposure, account takeover, vendor outage, insider misuse. This template is the credential-stuffing variant. Copy and adapt the rest.
 >
 > **Runbook ID:** RB-_________ · **Scenario:** _________ · **Owner:** _________ · **Last reviewed:** _________ · **Last tested (tabletop):** _________
 
@@ -12,11 +12,11 @@
 
 Trigger this runbook when **any** of the following are true:
 
-- Authentication monitoring shows login attempts > 1,000 per minute against a single endpoint.
-- Failed-login rate exceeds 10x the rolling 7-day baseline for more than 5 minutes.
-- A successful login originates from an IP, ASN, or geography not previously associated with the user, accompanied by access to sensitive data endpoints.
+- Authentication monitoring shows login attempts above 1,000 per minute against a single endpoint.
+- Failed-login rate is more than 10x the rolling 7-day baseline for over 5 minutes.
+- A successful login originates from an IP, ASN, or geography not previously associated with the user, alongside access to sensitive data endpoints.
 - A user reports their account was accessed without authorisation.
-- A threat-intel feed reports your domain or user credentials in a fresh dump.
+- A threat-intel feed flags your domain or user credentials in a fresh dump.
 
 If unsure, escalate. False alarms are cheaper than late responses.
 
@@ -33,7 +33,7 @@ If unsure, escalate. False alarms are cheaper than late responses.
 | DPO | DPO on-call | Phone tree |
 | Executive sponsor | CISO (deputy: CTO) | Phone tree |
 
-The IC is the single decision-maker. The IC does not type into systems — the IC directs others. If the IC is also the responder, you are understaffed and that is itself a finding.
+The IC is the single decision-maker. The IC does not type into systems. The IC directs others. If the IC is also the responder, you are understaffed, and that is itself a finding.
 
 ---
 
@@ -47,7 +47,7 @@ Default this scenario to **SEV-2** until evidence reduces or escalates it.
 
 ---
 
-## Phase 1 — Detect & Triage (T+0 to T+30 min)
+## Phase 1, Detect and Triage (T+0 to T+30 min)
 
 | # | Action | Owner | Done? |
 |---|---|---|---|
@@ -60,9 +60,9 @@ Default this scenario to **SEV-2** until evidence reduces or escalates it.
 
 ---
 
-## Phase 2 — Contain (T+30 min to T+2 hr)
+## Phase 2, Contain (T+30 min to T+2 hr)
 
-The goal of containment is to stop the bleeding **without breaking legitimate users**. Aggressive responses (mass password reset, full IP block) cause customer-facing harm and should be a last resort, not a first.
+The job of containment is to stop the bleeding **without breaking legitimate users**. Aggressive responses (mass password reset, full IP block) cause customer-facing harm and are a last resort, not a first move.
 
 | # | Action | Owner | Done? |
 |---|---|---|---|
@@ -78,38 +78,38 @@ The goal of containment is to stop the bleeding **without breaking legitimate us
 
 ---
 
-## Phase 3 — Investigate & Assess (T+2 hr to T+6 hr)
+## Phase 3, Investigate and Assess (T+2 hr to T+6 hr)
 
 This phase runs in parallel with regulatory clock decisions in Phase 4.
 
 | # | Action | Owner | Done? |
 |---|---|---|---|
-| 14 | For each confirmed-affected account, identify what was accessed. Specifically: did they hit endpoints that return personal data, financial data, or SPDI? | SecOps | |
-| 15 | Determine whether **data was exfiltrated** (downloaded, exported, emailed) versus only viewed. The distinction matters for regulator notifications. | SecOps | |
-| 16 | Identify the source of the credentials. Reused passwords from a third-party breach? Phishing? Insider? A combination? | SecOps + AppSec | |
-| 17 | Document the timeline minute-by-minute. Use the language "what we know" vs "what we assume." | IC | |
-| 18 | Brief the executive sponsor. Hold the decision on customer notification until Phase 4. | IC | |
+| 14 | For each confirmed-affected account, work out what was accessed. Specifically: did they hit endpoints that return personal data, financial data, or SPDI? | SecOps | |
+| 15 | Determine whether **data was exfiltrated** (downloaded, exported, emailed) versus only viewed. The distinction matters for regulator notification. | SecOps | |
+| 16 | Identify where the credentials came from. Reused passwords from a third-party breach? Phishing? Insider? A combination? | SecOps + AppSec | |
+| 17 | Document the timeline minute by minute. Use the phrasing "what we know" vs "what we assume." | IC | |
+| 18 | Brief the executive sponsor. Hold the call on customer notification until Phase 4. | IC | |
 
 ---
 
-## Phase 4 — Notify (regulatory clocks start at detection)
+## Phase 4, Notify (regulatory clocks start at detection)
 
-**Read the [`reference/regulator-clocks.md`](../../reference/regulator-clocks.md) document before this incident if you have not already.** During an incident is the wrong time to learn the clocks.
+**Read [`reference/regulator-clocks.md`](../../reference/regulator-clocks.md) before an incident, not during one.** Mid-incident is the wrong time to learn the clocks.
 
 | # | Action | Owner | Trigger | Deadline | Done? |
 |---|---|---|---|---|---|
 | 19 | Decide if CERT-In Annexure I applies (any "cyber incident" under the 2022 directions). | IC + Legal | Always assess | **6 hours from awareness** | |
 | 20 | If personal data of EU residents is affected: notify the lead supervisory authority. | DPO | Risk to data subject rights | **72 hours from awareness** (GDPR Art. 33) | |
-| 21 | If personal data of Indian residents is affected: notify the Data Protection Board of India. | DPO | DPDP Sec. 8(6) | "Without delay" — operate to **72 hours** | |
-| 22 | Notify affected customers individually if high risk to their rights and freedoms. | DPO + Comms | GDPR Art. 34 / DPDP | "Without undue delay" | |
+| 21 | If personal data of Indian residents is affected: notify the Data Protection Board of India. | DPO | DPDP Sec. 8(6) | "Without delay", operate to **72 hours** | |
+| 22 | Notify affected customers individually where there is high risk to their rights and freedoms. | DPO + Comms | GDPR Art. 34 / DPDP | "Without undue delay" | |
 | 23 | Notify business partners, payment processors, or others under contractual obligations. | Legal + Comms | Contracts | Per contract | |
 | 24 | Prepare a public statement only if media interest is likely or confirmed. **Legal must review before publication.** | Comms + Legal | Reputational | As needed | |
 
-**Critical principle.** Do not make public statements before you can defend them. The difference between "Your data was accessed" (a fact, often unverified at this stage) and "We detected unusual activity on a subset of accounts and are investigating" (honest until proven) is career-defining.
+**Critical principle.** Do not make public statements you cannot defend. The difference between "Your data was accessed" (a fact, often unverified at this stage) and "We detected unusual activity on a subset of accounts and are investigating" (honest until proven) is career-defining.
 
 ---
 
-## Phase 5 — Eradicate & Recover (T+6 hr onwards)
+## Phase 5, Eradicate and Recover (T+6 hr onwards)
 
 | # | Action | Owner | Done? |
 |---|---|---|---|
@@ -120,20 +120,20 @@ This phase runs in parallel with regulatory clock decisions in Phase 4.
 
 ---
 
-## Phase 6 — Postmortem (within 5 working days)
+## Phase 6, Postmortem (within 5 working days)
 
-A postmortem that names individuals as the cause is a failed postmortem. The output of a postmortem is **systemic improvement**, not blame.
+A postmortem that names individuals as the cause is a failed postmortem. The output is **systemic improvement**, not blame.
 
 A good postmortem includes:
 
-1. **Timeline.** Minute-by-minute, factual.
+1. **Timeline.** Minute by minute, factual.
 2. **What we know vs what we assume.** Be explicit.
 3. **Five whys** for each contributing factor. Stop only when the answer becomes "this is how the system was designed."
 4. **Customer impact.** Numbers, not adjectives.
-5. **Action items.** Each with an owner, a date, and a way to verify completion. No "investigate further" — that is not an action item.
-6. **What went well.** Strengthen what worked, do not only fix what broke.
+5. **Action items.** Each with an owner, a date, and a way to verify completion. "Investigate further" is not an action item.
+6. **What went well.** Reinforce what worked. Do not only fix what broke.
 
-The postmortem is shared with the executive sponsor, the engineering team, and (with appropriate sanitisation) the affected customers if they ask.
+Share the postmortem with the executive sponsor, the engineering team, and, with appropriate sanitisation, affected customers if they ask.
 
 ---
 

@@ -1,8 +1,10 @@
-# Regulator Clocks — Every Notification Deadline in One Table
+# Regulator Clocks: Every Notification Deadline in One Table
 
-> *When something goes wrong, you do not have time to look up the law. Print this. Pin it. Memorise the ones that apply to you.*
+> *When something goes wrong, you do not have time to look up the law. Print this. Pin it. Memorise the ones that apply to your stack.*
 
 **Last verified:** 17 April 2026.
+
+A note before you read: the numbers below are the clocks. Whether they actually hold in practice varies. The 6-hour CERT-In window and the GDPR 72-hour window are real and hard. The SEC four-business-day clock only starts once materiality is determined, which gives counsel some room. The LGPD "reasonable time" and DPDP "as per Rules" languages are still being interpreted; treat them as moving targets and watch the regulator's guidance, not just the statute.
 
 ---
 
@@ -58,30 +60,30 @@
 
 ---
 
-## CERT-In Directions 2022 — operational specifics
+## CERT-In Directions 2022: operational specifics
 
-The single most under-known operational clock for India-touching companies:
+The single most under-known operational clock for India-touching companies. I have seen large MNCs miss it because nobody on the rota had read the directions:
 
 - **6-hour** notification of any of the 20 listed incident types to CERT-In.
 - **180 days** of log retention as a baseline.
 - VPN and data-centre obligations (KYC, log retention).
-- Pre-drafted **Annexure I** reporting template — keep it ready.
+- Pre-drafted **Annexure I** reporting template. Keep it ready, pre-filled with your entity details.
 
-Practical advice from [Module 11.2](../modules/11-incident-response-bcp.md): **build a regulator-notification matrix keyed to data categories and jurisdictions, and pre-draft notification templates.** When the clock starts, you should be filling in blanks, not drafting from scratch.
+Practical advice from [Module 11.2](../modules/11-incident-response-bcp.md): build a regulator-notification matrix keyed to data categories and jurisdictions, and pre-draft notification templates. When the clock starts, you should be filling in blanks, not drafting from scratch at 2am.
 
 ---
 
 ## A note on "the clock starts when…"
 
-Read the law carefully. Different regulators define the trigger differently:
+Read the law carefully. Different regulators define the trigger differently, and this is where teams get caught:
 
-- **GDPR:** clock starts when the controller becomes **aware** of the breach (not when it happened).
-- **CERT-In:** clock starts when the incident is **noticed** by the entity.
-- **SEC 8-K Item 1.05:** clock starts after **materiality is determined**, not after the incident itself.
-- **HIPAA:** 60 days from **discovery** (which can include constructive discovery).
+- **GDPR:** clock starts when the controller becomes **aware** of the breach, not when it happened.
+- **CERT-In:** clock starts when the incident is **noticed** by the entity. Six hours moves fast.
+- **SEC 8-K Item 1.05:** clock starts after **materiality is determined**, not after the incident itself. This gives counsel room, and it also creates documentation risk if "determination" looks delayed in hindsight.
+- **HIPAA:** 60 days from **discovery**, which includes constructive discovery (you should have known).
 
-The difference between "occurred" and "aware/noticed/determined" is often days. Document carefully when awareness happened, who confirmed, and how — that timeline is the first thing the regulator asks for.
+The gap between "occurred" and "aware / noticed / determined" is often days. Document carefully when awareness happened, who confirmed it and how. That timeline is the first thing the regulator asks for, and the first thing plaintiffs' counsel will subpoena.
 
 ---
 
-> *In an incident, you will not be reading this for the first time. Read it now, while it is calm.*
+> *During an incident, you will not be reading this for the first time. Read it now, while it is calm.*

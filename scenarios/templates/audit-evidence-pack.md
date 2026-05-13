@@ -1,8 +1,8 @@
 # Audit Evidence Pack
 
-> **Template note.** An evidence pack is what you hand to an auditor (internal, external, or customer) to demonstrate that a control is **designed properly** and **operating effectively** over the period under review. The single biggest reason audits run long is bad evidence: missing dates, screenshots without context, samples that do not cover the period, and policies confused with proof of practice.
+> **Template note.** An evidence pack is what you hand to an auditor, internal, external or customer, to show that a control is **designed properly** and **operating effectively** across the period under review. The single biggest reason audits drag on is bad evidence. Missing dates. Screenshots with no context. Samples that do not cover the whole period. Policies handed over as proof of practice when they are not.
 >
-> The pack is one folder per control. Audit firms use different conventions; this template is opinionated and works for SOC 2, ISO 27001, and most customer audits. Adapt the labels if your auditor is prescriptive.
+> One folder per control. Audit firms use different conventions. This template works for SOC 2, ISO 27001, and most customer audits. If your auditor is prescriptive about labels, adapt to theirs and keep the structure.
 >
 > **Audit / Engagement:** _________ · **Period under review:** _________ to _________ · **Pack prepared by:** _________ · **Date:** _________
 
@@ -12,12 +12,12 @@
 
 For each control in scope:
 
-1. Create one folder named `<control-id>_<short-name>` (e.g., `A.8.5_secure-authentication`, `CC6.1_logical-access`).
+1. Create one folder named `<control-id>_<short-name>` (e.g. `A.8.5_secure-authentication`, `CC6.1_logical-access`).
 2. Inside the folder, place a copy of this template renamed to `00-evidence-summary.md`.
-3. Drop the supporting evidence files into the same folder, named per the convention in section 5.
-4. Cross-reference everything from the summary. Do not assume the auditor will hunt.
+3. Drop the supporting files into the same folder, named per the convention in section 5.
+4. Cross-reference everything from the summary. Auditors should not have to hunt.
 
-The pack is a self-contained narrative. An auditor should be able to open the folder cold and understand what the control is, why it matters, who owns it, and how you know it works.
+The pack is a self-contained narrative. An auditor should be able to open the folder cold and work out what the control is, why it matters, who owns it, and how you know it works.
 
 ---
 
@@ -39,15 +39,15 @@ The pack is a self-contained narrative. An auditor should be able to open the fo
 
 ## 2. Control narrative
 
-Write three short paragraphs.
+Three short paragraphs.
 
-**What the control does, in plain English.** A non-specialist should be able to read this and understand the control without prior context.
+**What the control does, in plain English.** A non-specialist should be able to read this and follow it with no prior context.
 
-> Example: *Multi-factor authentication is enforced for all employees accessing production systems. When a user signs in to the corporate identity provider, they must present a password and a second factor (TOTP via authenticator app, or hardware key). Access without the second factor is rejected at the identity provider, before any application is reached.*
+> Example: *Multi-factor authentication is enforced for all employees accessing production systems. When a user signs in to the corporate IdP, they must present a password and a second factor (TOTP via authenticator app, or hardware key). Logins without the second factor are rejected at the IdP, before any application is reached.*
 
-**How it is implemented.** Name the systems, the configurations, the policies, and the procedures. Reference the policy ID and version. Reference the system documentation.
+**How it is implemented.** Name the systems, the configurations, the policies, the procedures. Reference policy ID and version. Reference system documentation.
 
-**How it is monitored.** Describe what tells you, on a recurring basis, that the control is operating. Logs? Alerts? Reports? Reviews?
+**How it is monitored.** What tells you, on a recurring basis, that the control is operating? Logs, alerts, reports, reviews. Be specific.
 
 ---
 
@@ -72,25 +72,25 @@ The control is intended to mitigate the following risks from the risk register:
 
 ## 5. Evidence inventory
 
-For SOC 2 Type II and ISO 27001 surveillance audits, evidence must cover the **entire** period under review, not just a snapshot. Auditors will sample. Provide a population from which they can draw, and the means to sample randomly.
+For SOC 2 Type II and ISO 27001 surveillance audits, evidence has to cover the **entire** period under review, not just a snapshot on the day. Auditors sample. Give them a population to sample from, and the means to sample randomly.
 
-**File-naming convention:** `<seq>_<evidence-type>_<date-or-range>.<ext>` (e.g., `01_screenshot_idp-mfa-enforcement_2026-04-15.png`, `02_log-export_login-events_2026-01-01_to_2026-03-31.csv`).
+**File-naming convention:** `<seq>_<evidence-type>_<date-or-range>.<ext>` (e.g. `01_screenshot_idp-mfa-enforcement_2026-04-15.png`, `02_log-export_login-events_2026-01-01_to_2026-03-31.csv`).
 
 | # | Evidence file | What it demonstrates | Date or range covered | Source system | Captured by | Notes |
 |---|---|---|---|---|---|---|
-| 01 | 01_screenshot_idp-mfa-policy_2026-04-15.png | Identity provider configuration showing MFA policy enabled and assigned to all users in the production-access group. | Configuration as at 15/04/2026; policy in place since 14/02/2025. | Okta | | Annotated to highlight the relevant setting. |
-| 02 | 02_log-export_login-events_2026-01-01_to_2026-03-31.csv | Population of all production-system logins in Q1 2026, with MFA factor recorded for each. | 01/01/2026 to 31/03/2026 | Okta SystemLog API | | Total events: _________. Auditor may sample. |
-| 03 | 03_report_quarterly-access-review_2026-Q1.pdf | Quarterly access review evidencing MFA enrolment for 100% of production-access group members. | Q1 2026 review completed 10/04/2026 | Internal report | | Review log signed off by Head of IT. |
-| 04 | 04_screenshot_user-mfa-enrolment_2026-04-15.png | List from Okta showing all 142 production-access users enrolled with at least one second factor. | As at 15/04/2026 | Okta | | |
+| 01 | 01_screenshot_idp-mfa-policy_2026-04-15.png | IdP configuration showing the MFA policy enabled and assigned to all members of the production-access group. | Configuration as at 15/04/2026; policy in place since 14/02/2025. | Okta | | Annotated to highlight the relevant setting. |
+| 02 | 02_log-export_login-events_2026-01-01_to_2026-03-31.csv | Full population of production-system logins in Q1 2026, with the MFA factor recorded for each event. | 01/01/2026 to 31/03/2026 | Okta SystemLog API | | Total events: _________. Auditor may sample. |
+| 03 | 03_report_quarterly-access-review_2026-Q1.pdf | Quarterly access review showing MFA enrolment for 100% of production-access group members. | Q1 2026 review completed 10/04/2026 | Internal report | | Review log signed off by Head of IT. |
+| 04 | 04_screenshot_user-mfa-enrolment_2026-04-15.png | List from Okta showing all production-access users enrolled with at least one second factor. | As at 15/04/2026 | Okta | | |
 | 05 | 05_policy_information-security_v3-1.pdf | Information Security Policy v3.1 §6.4 mandating MFA for production access. | Effective 14/02/2025 | Policy library | | |
 
-Add rows as needed. The evidence inventory is the audit-ready surface; the files in the folder are the proof.
+Add rows as needed. The inventory is the audit-ready surface. The files in the folder are the proof.
 
 ---
 
 ## 6. Tests of operating effectiveness
 
-For Type II audits and surveillance audits, evidence of design alone is not enough. Describe the tests you performed (or are inviting the auditor to perform) to confirm the control is **operating** as designed throughout the period.
+For Type II and surveillance audits, design evidence alone is not enough. Describe the tests you have performed, or are inviting the auditor to perform, to confirm the control is **operating** as designed across the period.
 
 | Test # | Test description | Population | Sample size | Result | Tester | Date |
 |---|---|---|---|---|---|---|
@@ -98,13 +98,13 @@ For Type II audits and surveillance audits, evidence of design alone is not enou
 | T2 | For all employees who joined the production-access group in the period, confirm MFA was enrolled within 3 working days of access being granted. | All joiners Q1 2026 (n = _________) | 100% | _________ | Internal Audit | _________ |
 | T3 | For all employees who left the production-access group in the period, confirm access was removed within 1 working day. | All leavers Q1 2026 (n = _________) | 100% | _________ | Internal Audit | _________ |
 
-**Findings from internal testing:** _________ (state any exceptions here, including remediation. Do not hide exceptions; auditors find them and trust drops.)
+**Findings from internal testing:** _________ (state any exceptions, including remediation. Do not hide exceptions. Auditors find them, and trust drops.)
 
 ---
 
 ## 7. Known exceptions and remediations
 
-Record honestly any instances where the control did not operate as designed during the period. Include root cause and remediation.
+Record honestly any case where the control did not operate as designed during the period. Include root cause and remediation.
 
 | Date | Exception | Root cause | Remediation | Status |
 |---|---|---|---|---|

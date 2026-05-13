@@ -1,8 +1,8 @@
 # Statement of Applicability (SoA)
 
-> **Template note.** The Statement of Applicability is the central artefact of an ISO 27001 ISMS. It lists every control in Annex A (93 controls in the 2022 revision), states whether it is applicable to your organisation, justifies inclusions and exclusions, and points to where each control is implemented. Auditors live in this document. So should you.
+> **Template note.** The Statement of Applicability is the central artefact of an ISO 27001 ISMS. It lists every Annex A control (93 in the 2022 revision), states whether it is applicable, justifies inclusions and exclusions, and points to where each control is implemented. Auditors live in this document. So should you.
 >
-> Maintain this in a spreadsheet for real use. The Markdown version below shows the columns and a representative sample of rows. Copy the structure into Excel, Google Sheets, or your GRC tool, and complete all 93 rows.
+> Maintain it in a spreadsheet for real use. The Markdown below shows the columns and a sample of rows. Copy the structure into Excel, Google Sheets, or your GRC tool, and complete all 93 rows.
 >
 > **Organisation:** _________ · **ISMS scope:** _________ · **SoA version:** _________ · **Date:** _________ · **Approved by:** _________
 
@@ -12,31 +12,31 @@
 
 For each Annex A control:
 
-1. **Applicable?** Yes / No. If No, you must justify the exclusion (Clause 6.1.3 d). "We are too small" is not a justification. "We do not develop software in-house, therefore secure development controls do not apply" is.
-2. **Justification for inclusion or exclusion.** One or two sentences. Reference the risk(s) the control addresses.
+1. **Applicable?** Yes or No. If No, you must justify the exclusion (Clause 6.1.3 d). "We are too small" is not a justification. "We do not develop software in-house, therefore secure development controls do not apply" is.
+2. **Justification for inclusion or exclusion.** One or two sentences. Reference the risks the control addresses.
 3. **Implementation status.** Implemented / Partially implemented / Planned / Not implemented.
-4. **Implementation reference.** The policy, procedure, system, or evidence that demonstrates the control. Use a stable reference, not "see Confluence."
+4. **Implementation reference.** The policy, procedure, system, or evidence that shows the control. Use a stable reference, not "see Confluence."
 5. **Control owner.** A named role, not a team.
 6. **Last reviewed.** Date.
 
 ---
 
-## Sample rows (Annex A 2022 — 93 controls across 4 themes)
+## Sample rows (Annex A 2022, 93 controls across 4 themes)
 
 ### A.5 Organizational controls (37 controls)
 
 | Control ID | Control Name | Applicable? | Justification | Implementation Status | Implementation Reference | Control Owner | Last Reviewed |
 |---|---|---|---|---|---|---|---|
-| A.5.1 | Policies for information security | Yes | Required by ISMS; addresses governance risk. | Implemented | POL-001 Information Security Policy v3.1 | CISO | 17/04/2026 |
+| A.5.1 | Policies for information security | Yes | Required by the ISMS. Addresses governance risk. | Implemented | POL-001 Information Security Policy v3.1 | CISO | 17/04/2026 |
 | A.5.2 | Information security roles and responsibilities | Yes | Defines accountability across the ISMS. | Implemented | POL-001 §4; RACI matrix RACI-002 | CISO | 17/04/2026 |
 | A.5.3 | Segregation of duties | Yes | Prevents fraud and error in privileged operations. | Implemented | IAM-PROC-004; quarterly access review | Head of IT | 17/04/2026 |
-| A.5.7 | Threat intelligence | Yes | Addresses emerging threats relevant to SaaS. | Partially implemented | Subscribed to CERT-In and vendor feeds; no formal triage SOP yet | Security Operations Lead | 17/04/2026 |
+| A.5.7 | Threat intelligence | Yes | Covers emerging threats relevant to a SaaS estate. | Partially implemented | Subscribed to CERT-In and vendor feeds; no formal triage SOP yet | Security Operations Lead | 17/04/2026 |
 | A.5.19 | Information security in supplier relationships | Yes | Addresses supply-chain risk (R-001, R-007). | Implemented | Vendor Management Policy POL-012; due-diligence checklist | Procurement Lead | 17/04/2026 |
-| A.5.21 | Managing ICT supply chain | Yes | Addresses single-vendor concentration risk. | Partially implemented | Tier-1 vendor list maintained; failover plans in progress | Procurement Lead | 17/04/2026 |
+| A.5.21 | Managing ICT supply chain | Yes | Single-vendor concentration risk. | Partially implemented | Tier-1 vendor list maintained; failover plans in progress | Procurement Lead | 17/04/2026 |
 | A.5.23 | Information security for use of cloud services | Yes | Primary deployment is AWS; cloud-specific controls required. | Implemented | Cloud Security Standard STD-003 | Head of Infrastructure | 17/04/2026 |
-| A.5.30 | ICT readiness for business continuity | Yes | Required by BCP programme. | Partially implemented | DR runbook RUN-009; restore test pending (R-006) | Head of Infrastructure | 17/04/2026 |
-| A.5.31 | Legal, statutory, regulatory and contractual requirements | Yes | DPDP, GDPR, contractual obligations apply. | Implemented | Compliance Register REG-001 | DPO | 17/04/2026 |
-| A.5.34 | Privacy and protection of PII | Yes | Personal data is core to processing. | Implemented | Privacy Policy POL-005; ROPA REG-002 | DPO | 17/04/2026 |
+| A.5.30 | ICT readiness for business continuity | Yes | Required by the BCP programme. | Partially implemented | DR runbook RUN-009; restore test pending (R-006) | Head of Infrastructure | 17/04/2026 |
+| A.5.31 | Legal, statutory, regulatory and contractual requirements | Yes | DPDP, GDPR and contractual obligations apply. | Implemented | Compliance Register REG-001 | DPO | 17/04/2026 |
+| A.5.34 | Privacy and protection of PII | Yes | Personal data is core to the processing we do. | Implemented | Privacy Policy POL-005; ROPA REG-002 | DPO | 17/04/2026 |
 
 ### A.6 People controls (8 controls)
 
@@ -96,4 +96,4 @@ This Statement of Applicability is reviewed annually and after any material chan
 
 ---
 
-*The full SoA covers all 93 Annex A controls. The above is a representative sample. Maintain the operational version in your GRC tool or a controlled spreadsheet, version-locked, with change history.*
+*The full SoA covers all 93 Annex A controls. The above is a representative sample. Keep the operational version in your GRC tool or a controlled spreadsheet, version-locked, with change history.*

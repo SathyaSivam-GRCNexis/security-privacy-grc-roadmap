@@ -10,7 +10,7 @@ assignees: ''
 
 **File:** e.g., `modules/06-privacy-laws.md`
 
-**Section / heading:** e.g., "DPDP Act 2023 — penalties"
+**Section / heading:** e.g., "DPDP Act 2023: penalties"
 
 **Approximate line or paragraph:** _________
 

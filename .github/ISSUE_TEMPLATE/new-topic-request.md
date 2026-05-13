@@ -32,9 +32,9 @@ What does the reader gain that they cannot get from existing modules or external
 
 ## Are you offering to write it?
 
-- [ ] Yes — I will draft it and submit a PR.
-- [ ] Yes — with guidance from the maintainer.
-- [ ] No — I am suggesting the topic only.
+- [ ] Yes: I will draft it and submit a PR.
+- [ ] Yes: with guidance from the maintainer.
+- [ ] No: I am suggesting the topic only.
 
 If yes, please confirm you have read [`CONTRIBUTING.md`](../../CONTRIBUTING.md), in particular the **Voice and style** section.
 

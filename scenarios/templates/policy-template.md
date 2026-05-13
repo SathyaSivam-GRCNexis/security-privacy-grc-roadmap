@@ -2,9 +2,9 @@
 
 > **Template note.** A policy is a short, mandatory statement of what the organisation does and expects. It is not a procedure (how), a standard (what specifically), or a guideline (what we suggest). Policies should be readable in one sitting, signed off at the top, and reviewed at least annually.
 >
-> A policy that nobody reads is a finding. A policy written in legalese is the most common reason staff do not read it. Write in plain English. Short sentences. The shortest policy that meets the requirement is the best policy.
+> A policy that nobody reads is a finding. The most common reason staff do not read a policy is that it is written in legalese. Plain English. Short sentences. The shortest policy that meets the requirement is the best policy.
 >
-> Replace `[Policy Name]` and the placeholder text throughout. Delete this template note before publishing.
+> Replace `[Policy Name]` and the placeholder text throughout. Delete this template note before you publish.
 
 ---
 
@@ -24,9 +24,9 @@
 
 ## 1. Purpose
 
-State, in two or three sentences, why this policy exists. Reference the risk it addresses or the obligation it discharges.
+In two or three sentences, say why this policy exists. Reference the risk it addresses or the obligation it discharges.
 
-> Example: *This policy establishes the requirements for managing access to information systems containing personal data. It addresses the risk of unauthorised access and supports compliance with ISO 27001 Annex A.5.15 and the DPDP Act 2023.*
+> Example: *This policy sets the requirements for managing access to information systems containing personal data. It addresses the risk of unauthorised access and supports compliance with ISO 27001:2022 Annex A.5.15 and the DPDP Act 2023.*
 
 ---
 
@@ -49,7 +49,7 @@ Define who and what the policy applies to. Be explicit about exclusions.
 
 ## 3. Definitions
 
-Define only terms that are essential to interpreting this policy. Refer the reader to the [glossary](../../reference/glossary.md) for general definitions.
+Define only the terms that are essential to interpreting this policy. Point the reader to the [glossary](../../reference/glossary.md) for the general ones.
 
 | Term | Definition in the context of this policy |
 |---|---|
@@ -60,7 +60,7 @@ Define only terms that are essential to interpreting this policy. Refer the read
 
 ## 4. Policy statements
 
-State each requirement as a single, testable sentence. Use "must" for mandatory, "should" for strongly recommended, "may" for permissive. Number each statement so it can be referenced in audits.
+State each requirement as a single, testable sentence. Use "must" for mandatory, "should" for strongly recommended, "may" for permissive. Number each statement so it can be cited in audits.
 
 ### 4.1 General requirements
 
@@ -104,12 +104,12 @@ State each requirement as a single, testable sentence. Use "must" for mandatory,
 
 1. Requested in writing to the policy owner.
 2. Justified with the business reason and risk acceptance.
-3. Approved by [role, e.g., CISO] for a defined period not exceeding 12 months.
+3. Approved by [role, e.g. CISO] for a defined period not exceeding 12 months.
 4. Recorded in the exceptions register.
 
-Exceptions are reviewed at expiry and either renewed, remediated, or expired.
+Exceptions are reviewed at expiry and either renewed, remediated, or closed.
 
-**Consequences.** Breach of this policy may result in disciplinary action up to and including termination, in accordance with the [Disciplinary Policy POL-_________]. Where a breach involves personal data, the DPO must be notified.
+**Consequences.** Breach of this policy may result in disciplinary action up to and including termination, in line with the [Disciplinary Policy POL-_________]. Where a breach involves personal data, the DPO must be notified.
 
 ---
 
@@ -123,7 +123,7 @@ Exceptions are reviewed at expiry and either renewed, remediated, or expired.
 
 ## 8. References
 
-- [Regulatory references, e.g., DPDP Act 2023, GDPR, ISO 27001 Annex A.x.y]
+- [Regulatory references, e.g. DPDP Act 2023, GDPR, ISO 27001 Annex A.x.y]
 - _________
 - _________
 

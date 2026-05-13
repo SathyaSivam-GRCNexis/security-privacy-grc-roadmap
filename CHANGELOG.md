@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ---
 
-## [1.0.0] — 17 April 2026
+## [1.0.0]: 17 April 2026
 
 ### Added
 
@@ -36,28 +36,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
   - 16 Careers and interviews
   - 17 Practice scenarios and capstones
 - Reference materials in `reference/`:
-  - `glossary.md` — alphabetised plain-English definitions.
-  - `acronyms.md` — A to Z acronym dictionary.
-  - `frameworks-cross-map.md` — 33-row cross-map across SOC 2, ISO 27001:2022, NIST CSF 2.0, NIST 800-53 Rev 5, PCI-DSS v4, and HIPAA.
-  - `regulator-clocks.md` — breach clocks, DSR clocks, and audit cycles for major regulators.
-  - `free-resources.md` — curated free learning resources (preserved from source appendix).
+  - `glossary.md`: alphabetised plain-English definitions.
+  - `acronyms.md`: A to Z acronym dictionary.
+  - `frameworks-cross-map.md`: 33-row cross-map across SOC 2, ISO 27001:2022, NIST CSF 2.0, NIST 800-53 Rev 5, PCI-DSS v4, and HIPAA.
+  - `regulator-clocks.md`: breach clocks, DSR clocks, and audit cycles for major regulators.
+  - `free-resources.md`: curated free learning resources (preserved from source appendix).
 - Interview preparation in `interview-prep/`:
-  - `question-bank.md` — approximately 116 questions across role buckets.
-  - `30-second-drills.md` — approximately 85 rapid-fire interview drills.
-  - `star-and-c4r-frameworks.md` — answer frameworks with worked examples.
-  - `india-market-snapshot.md` — employers, salary bands, and demand trends.
+  - `question-bank.md`: approximately 116 questions across role buckets.
+  - `30-second-drills.md`: approximately 85 rapid-fire interview drills.
+  - `star-and-c4r-frameworks.md`: answer frameworks with worked examples.
+  - `india-market-snapshot.md`: employers, salary bands, and demand trends.
 - Practice scenarios scaffolding in `scenarios/`:
-  - `README.md` — usage guide and portfolio framing.
-  - `templates/risk-register.csv` — pre-populated risk register.
-  - `templates/dpia-template.md` — Data Protection Impact Assessment template.
-  - `templates/statement-of-applicability.md` — ISO 27001 SoA template with sample rows.
-  - `templates/ir-runbook.md` — incident response runbook (credential-stuffing variant).
-  - `templates/vendor-assessment.md` — full vendor security and privacy assessment.
-  - `templates/policy-template.md` — generic policy template.
-  - `templates/audit-evidence-pack.md` — per-control evidence pack template.
+  - `README.md`: usage guide and portfolio framing.
+  - `templates/risk-register.csv`: pre-populated risk register.
+  - `templates/dpia-template.md`: Data Protection Impact Assessment template.
+  - `templates/statement-of-applicability.md`: ISO 27001 SoA template with sample rows.
+  - `templates/ir-runbook.md`: incident response runbook (credential-stuffing variant).
+  - `templates/vendor-assessment.md`: full vendor security and privacy assessment.
+  - `templates/policy-template.md`: generic policy template.
+  - `templates/audit-evidence-pack.md`: per-control evidence pack template.
 - Repository governance:
-  - `CONTRIBUTING.md` — voice, structure, and contribution rules.
-  - `LICENSE` — dual licence (CC BY-SA 4.0 for content; MIT for templates).
+  - `CONTRIBUTING.md`: voice, structure, and contribution rules.
+  - `LICENSE`: dual licence (CC BY-SA 4.0 for content; MIT for templates).
   - `CODE_OF_CONDUCT.md`.
   - `.gitignore`.
   - `.github/ISSUE_TEMPLATE/content-error.md`.
@@ -73,8 +73,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## How releases will be numbered
 
-- **Major (X.0.0)** — restructure of the repository, removal or replacement of modules, or material changes to the persona paths.
-- **Minor (1.X.0)** — new modules, new templates, or significant rewrites of existing material.
-- **Patch (1.0.X)** — corrections, link fixes, regulatory updates that do not change structure.
+- **Major (X.0.0)**: restructure of the repository, removal or replacement of modules, or material changes to the persona paths.
+- **Minor (1.X.0)**: new modules, new templates, or significant rewrites of existing material.
+- **Patch (1.0.X)**: corrections, link fixes, regulatory updates that do not change structure.
 
 Between numbered releases, the commit history is the source of truth.

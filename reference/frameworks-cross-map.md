@@ -1,6 +1,6 @@
-# Frameworks Cross-Map — SOC 2 ↔ ISO 27001:2022 ↔ NIST CSF 2.0 ↔ NIST 800-53 Rev 5 ↔ PCI-DSS v4 ↔ HIPAA Security
+# Frameworks Cross-Map: SOC 2 ↔ ISO 27001:2022 ↔ NIST CSF 2.0 ↔ NIST 800-53 Rev 5 ↔ PCI-DSS v4 ↔ HIPAA Security
 
-> *The single most useful skill in GRC. Build controls once, map to many frameworks, present the same evidence to many auditors.*
+> *If I had to pick one artefact that saved me the most hours over four years, it is this map. Build the control once, present the same evidence to every auditor.*
 
 **Last verified:** 17 April 2026. Source: [Module 7.7](../modules/07-grc-frameworks.md).
 
@@ -8,9 +8,9 @@
 
 ## How to read this map
 
-Each row is a **control topic** — something you actually do. The columns are how each framework refers to that topic. When a customer questionnaire asks "do you have MFA?" you can answer once with confidence that you're covered for SOC 2 CC6.1, ISO 27001:2022 A.8.5, NIST CSF 2.0 PR.AA-03, NIST 800-53 IA-2(1), PCI-DSS Req 8.4, and HIPAA §164.312(a)(2)(i).
+Each row is a **control topic**, meaning something you actually do. The columns are how each framework refers to that topic. When a customer questionnaire asks "do you have MFA?" you answer once and you are covered for SOC 2 CC6.1, ISO 27001:2022 A.8.5, NIST CSF 2.0 PR.AA-03, NIST 800-53 IA-2(1), PCI-DSS Req 8.4, and HIPAA §164.312(a)(2)(i).
 
-In your day-to-day work, keep this in a spreadsheet. When a new framework lands, add a column. When a control changes, update one cell, and it propagates to evidence across audits.
+Keep this in a spreadsheet at work. When a new framework lands, add a column. When a control changes, update one cell and let it propagate into your evidence library. Trying to do this from memory under audit pressure does not end well.
 
 ---
 
@@ -59,31 +59,31 @@ In your day-to-day work, keep this in a spreadsheet. When a new framework lands,
 
 ### When a customer sends you a SIG / CAIQ / DDQ
 
-Per [Module 17 Scenario 4](../modules/17-practice-scenarios.md): the average enterprise DDQ has 200–400 questions. Most map to the topics above. If you can confidently say "we satisfy this via control X, evidenced by Y, mapped to SOC 2 CC6.1 and ISO A.8.5," you collapse 50+ questions down to a handful of unique answers. That is the difference between a 2-week response and a 2-day response.
+A typical enterprise DDQ runs 200 to 400 questions. Most of them map to the topics above. If you can say "we satisfy this via control X, evidence Y, mapped to SOC 2 CC6.1 and ISO A.8.5", you collapse 50+ questions into a handful of unique answers. That is the difference between a two-week response and a two-day response, and in my experience procurement teams remember which one you were.
 
-### When you're designing a new control
+### When you are designing a new control
 
-Don't design for a single framework. Design for the topic, then map. A well-designed access-review process passes SOC 2 (CC6.3), ISO 27001 (A.5.18), NIST CSF (PR.AA-05), 800-53 (AC-6(7)), PCI-DSS (Req 7.2.4), and HIPAA (§164.308(a)(4)(ii)(C)) at the same time, with the same evidence.
+Do not design for a single framework. Design for the topic, then map. A well-designed access review passes SOC 2 (CC6.3), ISO 27001 (A.5.18), NIST CSF (PR.AA-05), 800-53 (AC-6(7)), PCI-DSS (Req 7.2.4) and HIPAA (§164.308(a)(4)(ii)(C)) on the same evidence. Designing six versions of the same review is how teams burn out.
 
 ### When a new framework version lands
 
-Add a column. Walk every row. Update cells that change. Most won't. The 2022 update of ISO 27001 (114 → 93 controls) was painful for organisations that hadn't built a cross-map; trivial for the ones that had.
+Add a column. Walk every row. Update what changed. Most cells will not move. The ISO 27001 2022 update (114 down to 93 controls) was painful for teams who had never built a cross-map and almost a non-event for teams who had.
 
 ---
 
 ## Authoritative cross-mapping sources
 
-Don't rebuild what NIST already publishes:
+Do not rebuild what NIST already publishes:
 
 - 🏛 [NIST CSF Informative References (cross-walks to 800-53, ISO 27001, COBIT)](https://www.nist.gov/cyberframework/informative-references)
-- 🏛 [Secure Controls Framework — free common control set with cross-mappings](https://securecontrolsframework.com/)
+- 🏛 [Secure Controls Framework: free common control set with cross-mappings](https://securecontrolsframework.com/)
 - 🏛 [CIS Controls v8 → CSF / ISO / PCI mapping (Center for Internet Security)](https://www.cisecurity.org/controls)
-- 🏛 [HITRUST CSF — unified mapping for healthcare](https://hitrustalliance.net/)
+- 🏛 [HITRUST CSF: unified mapping for healthcare](https://hitrustalliance.net/)
 
 ---
 
 ## A warning
 
-This map covers **what control topic** maps to **what reference**. It does not cover **how good your implementation is**. A poorly implemented MFA rollout (SMS-only, no admin coverage) still maps to CC6.1, A.8.5, PR.AA-03 — and still fails the audit. The framework reference is your starting point, not your evidence.
+This map tells you **what control topic** maps to **what reference**. It does not tell you whether your implementation is any good. A poor MFA rollout (SMS-only, no admin coverage) still maps to CC6.1, A.8.5 and PR.AA-03, and it will still fail the audit. The citation is your starting point. The evidence is what you defend.
 
 > *Build controls once. Map to many. Defend the implementation, not the citation.*
